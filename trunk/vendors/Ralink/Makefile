@@ -15,7 +15,7 @@ COMP            = $(if $(CONFIG_KERNEL_NO_COMPRESS),none,lzma)
 PART_ALIGN      = $(if $(filter y,$(CONFIG_MTD_NAND_MTK) $(CONFIG_MTD_NAND_RALINK)),131072,16)
 
 # === Load Address ===
-LOAD_ADDR       = $(if $(filter $(CONFIG_PRODUCT),MT7621),81001000,80000000)
+LOAD_ADDR       = $(if $(filter $(CONFIG_PRODUCT),MT7621),80001000,80000000)
 
 # === Entry address command ===
 ifeq ($(CONFIG_WITHOUT_KERNEL),y)
